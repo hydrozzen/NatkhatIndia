@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="rgba(252, 70, 107, 1)" />
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="favicon_io/site.webmanifest">
+    <title>Assignment Maker</title>
+    <link href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css" />
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
+
+        :root {
+            --font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto,
+                "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif,
+                "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+                "Noto Color Emoji";
+            --sliderHeight: 25px;
+        }
+
+        body {
+            font-family: "Ubuntu", sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="body">
+        <main>
+            <nav id="nav">
+                <div>
+                    <h2 class="cname">Assignment Maker</h2>
+                    <i class="bx bx-md bxl-github" style="vertical-align: middle" id="githubtop" title="Open in Github"
+                        onclick="openInGithub()"></i>
+                </div>
+
+                <div class="switch">
+                    <input type="color" name="color input" id="inputColor" value="#2424fb" title="Ink color"
+                        style="vertical-align: middle" />
+                    <i class="bx bx-cog bx-md bx-spin" id="changeMode" title="Change mode"></i>
+                </div>
+            </nav>
+            <div class="input">
+                <textarea name="inputText" id="inputText" placeholder="Enter the text you want to written in paper ..."
+                    title="Write the text here"></textarea>
+            </div>
+            <div class="options">
+                <div class="buttons">
+                   
+                    <input type="button" value="Change Font" id="ChangeFont" />
+                   
+                </div>
+                
+            </div>
+
+            <div id="page">
+                <canvas id="canvas" width="793px" height="1123px"></canvas>
+            </div>
+        </main>
+        <footer>
+            made with
+            <i class="bx bxs-heart bx-flashing" style="
+            color: rgba(252, 70, 107, 1);
+            font-size: 25px;
+            vertical-align: middle;
+          "></i>
+            by Hydrozzen
+            <i class="bx bx-md bxl-github" style="vertical-align: middle" id="githubbottom"></i>
+        </footer>
+    </div>
+    <script src="js/script.js"></script>
+    <script src="js/controls.js"></script>
+    <script src="js/switch.js"></script>
+    <script src="js/extend.js"></script>
+</body>
+
+</html>
