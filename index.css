@@ -12,10 +12,30 @@ nav{
   
   background: #0c0c0c;
 }
+
+#content h1{
+  font-size: 3.2rem;
+  font-weight: 400;
+  line-height: 1;
+  margin-bottom: 1.5rem;
+  margin-top: 4rem
+}
+
+#content p{
+  margin-bottom: 1.4rem;
+  margin-top: 1.4rem;
+  padding-right: 0;
+  vertical-align: baseline
+}
+
+#content {
+  padding: 23px;
+}
+
 nav .wrapper{
   position: relative;
   max-width: 1300px;
-  padding: 0px 30px;
+  padding: 0 30px;
   height: 70px;
   line-height: 70px;
   margin: auto;
@@ -72,7 +92,7 @@ nav .wrapper{
   display: block;
   padding: 0 0 0 15px;
   font-weight: 400;
-  border-radius: 0px;
+  border-radius: 0;
 }
 .mega-box{
   position: absolute;
@@ -113,7 +133,6 @@ nav .wrapper{
   padding: 0 20px;
 }
 .row .mega-links li a{
-  padding: 0px;
   padding: 0 20px;
   color: #d9d9d9;
   font-size: 17px;
@@ -150,7 +169,7 @@ nav .wrapper{
     padding: 50px 10px;
     line-height: 50px;
     overflow-y: auto;
-    box-shadow: 0px 15px 15px rgba(0,0,0,0.18);
+    box-shadow: 0 15px 15px rgba(0,0,0,0.18);
     transition: all 0.3s ease;
   }
   /* custom scroll bar */
@@ -164,7 +183,7 @@ nav .wrapper{
     background: #3A3B3C;
   }
   #menu-btn:checked ~ .nav-links{
-    left: 0%;
+    left: 0;
   }
   #menu-btn:checked ~ .btn.menu-btn{
     display: none;
@@ -187,7 +206,7 @@ nav .wrapper{
     visibility: visible;
     padding-left: 20px;
     width: 100%;
-    max-height: 0px;
+    max-height: 0;
     overflow: hidden;
     box-shadow: none;
     transition: all 0.3s ease;
@@ -225,7 +244,7 @@ nav .wrapper{
     opacity: 1;
     visibility: visible;
     padding: 0 20px;
-    max-height: 0px;
+    max-height: 0;
     overflow: hidden;
     transition: all 0.3s ease;
   }
@@ -241,10 +260,10 @@ nav .wrapper{
   }
   .mega-box .content .row:nth-child(1),
   .mega-box .content .row:nth-child(2){
-    border-top: 0px;
+    border-top: 0;
   }
   .content .row .mega-links{
-    border-left: 0px;
+    border-left: 0;
     padding-left: 15px;
   }
   .row .mega-links li{
@@ -277,9 +296,9 @@ nav input{
   }
 
 
-  * {
+/*  * {
     box-sizing: border-box;
-  }
+  }*/
   
   .column {
     float: left;
