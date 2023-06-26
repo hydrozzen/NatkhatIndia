@@ -1,0 +1,30 @@
+
+body {
+    margin: 0;
+  }     
+  .hero {
+      display: flex;
+      flex-direction: column;
+      background-image: url("./assets/giphy.gif");
+      height: 70vh;
+      align-self: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-attachment: fixed;
+      align-items: center;
+      justify-content: center;
+  }
+        
+  .text {
+      font-size: 1.4rem;
+      text-align: center;
+      color: white;
+      
+  }
+  @media screen and (max-width: 479px) {
+    .hero {
+        height: 15%;
+        
+        
+    }
+  }
